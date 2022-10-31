@@ -24,7 +24,7 @@ function init() {
       voiceSelect.appendChild(option);
     }
   }
-  //populateVoiceList();
+  populateVoiceList();
   if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = populateVoiceList;
   }
