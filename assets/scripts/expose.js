@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 function init() {
   // TODO
-  
+  const jsConfetti = new JSConfetti()
   let option = document.querySelector('select');
   let image = document.querySelector('img');
   let playButton = document.querySelector("button");
@@ -31,6 +31,9 @@ function init() {
   }
 function updateAudio(){
   audio.play();
+  if(option.value == "party-horn"){
+    jsConfetti.addConfetti();
+  }
 }
 function volumeImage(){
   //alert(volumeBar.value);
@@ -46,7 +49,7 @@ function volumeImage(){
     volumeSrc.src = "assets/icons/volume-level-3.svg";
   }
   if(volumeBar.valueAsNumber>=33 && volumeBar.valueAsNumber<67){
-    volumeBar.volume ="assets/icons/volume-level-2.svg";
+    volumeBar.volume = "assets/icons/volume-level-2.svg";
   }
 }
 
