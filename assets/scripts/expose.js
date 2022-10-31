@@ -49,7 +49,7 @@ function volumeImage(){
     volumeSrc.src = "assets/icons/volume-level-3.svg";
   }
   if(volumeBar.valueAsNumber>=33 && volumeBar.valueAsNumber<67){
-    volumeBar.src = "assets/icons/volume-level-2.svg";
+    volumeSrc.src = "assets/icons/volume-level-2.svg";
   }
 }
 
